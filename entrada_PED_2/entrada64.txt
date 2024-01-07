@@ -1,0 +1,5 @@
+3
+4
+L L L E
+E E L E
+E E L T

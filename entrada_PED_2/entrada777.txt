@@ -1,0 +1,22 @@
+20
+14
+L L E E E E E E E E E E E E
+E L E E E E E E E E E E E E
+E L E E E E E E E E E E E E
+E L T E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
+E E E E E E E E E E E E E E
