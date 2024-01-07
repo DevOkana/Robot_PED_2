@@ -1,6 +1,3 @@
-Aquí tienes el texto corregido y formateado:
-
-
 # Proyecto de Gestión de Archivos y Comparación
 
 Este proyecto consta de dos clases principales: `Archivos` y `Comparador`, diseñadas para gestionar la entrada y salida de archivos, así como comparar archivos generados con archivos esperados.
