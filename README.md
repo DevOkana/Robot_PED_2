@@ -2,6 +2,8 @@
 
 Este proyecto consta de dos clases principales: `Archivos` y `Comparador`, diseñadas para gestionar la entrada y salida de archivos, así como comparar archivos generados con archivos esperados.
 
+`pip install natsort`
+
 ## Clase `Archivos`
 
 ### Método `__init__(self, ruta_jar, ruta_carpeta_entrada, ruta_carpeta_salida)`
