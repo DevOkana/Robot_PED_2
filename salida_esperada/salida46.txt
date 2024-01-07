@@ -1,1 +1,9 @@
-No se encontró un camino hasta el tornillo.
+( 7 , 3 )
+( 7 , 2 )
+( 6 , 2 )
+( 5 , 2 )
+( 4 , 2 )
+( 3 , 2 )
+( 2 , 2 )
+( 1 , 2 )
+( 1 , 1 )

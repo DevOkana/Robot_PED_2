@@ -1,6 +1,1 @@
-( 4 , 3 )
-( 4 , 2 )
-( 3 , 2 )
-( 2 , 2 )
-( 1 , 2 )
-( 1 , 1 )
+No se encontró un camino hasta el tornillo.
