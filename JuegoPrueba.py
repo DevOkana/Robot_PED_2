@@ -98,8 +98,8 @@ class Comparador:
         salida_esperada = os.listdir(ruta_esperada)
 
         for archivo_actual in salida_actual:
-            ruta_completa_actual = os.path.join(self.ruta_carpeta_salida_actual, archivo_actual)
-            archivo_esperado = os.path.join(self.ruta_carpeta_salida_esperada, archivo_actual)
+            ruta_completa_actual = natsorted(os.path.join(self.ruta_carpeta_salida_actual, archivo_actual))
+            archivo_esperado = natsorted(os.path.join(self.ruta_carpeta_salida_esperada, archivo_actual))
 
             if archivo_actual in salida_esperada:
                 if self.son_archivos_iguales(ruta_completa_actual, archivo_esperado):
