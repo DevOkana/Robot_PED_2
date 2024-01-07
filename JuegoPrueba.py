@@ -1,6 +1,7 @@
 import os
 import subprocess
 import filecmp
+from natsort import natsorted
 
 class Archivos:
     def __init__(self, ruta_jar=os.path.join(os.getcwd(), "robot.jar"), ruta_carpeta_entrada=os.path.join(os.getcwd(), "entrada_PED_2"), ruta_carpeta_salida=os.path.join(os.getcwd(), "salida_actual")):
@@ -22,11 +23,12 @@ class Archivos:
         Gestiona la entrada de archivos en la carpeta especificada.
         Itera sobre los archivos de la carpeta de entrada e inicia el proceso para cada uno.
         """
-        entrada = os.listdir(self.ruta_carpeta_entrada)
+        entrada = natsorted(os.listdir(self.ruta_carpeta_entrada))
 
         count = 1
         for archivo in entrada:
             ruta_completa = os.path.join(self.ruta_carpeta_entrada,archivo)
+            #print(ruta_completa)
             self.iniciar(ruta_completa,self.Gestion_Salida(count))
             count += 1
 
