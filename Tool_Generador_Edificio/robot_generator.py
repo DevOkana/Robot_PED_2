@@ -7,6 +7,7 @@ class Edificio:
         #Inicialización de atributos
         self.filas_aleatorias = random.randint(3, 20)
         self.columnas_aleatorias = random.randint(3, 20)
+
         self.espacio_reducido = 'E'
         self.paso_libre = 'L'
         self.tornillo = 'T'
@@ -38,15 +39,13 @@ class Edificio:
 
 # Clase para exportar información del edificio a archivos de texto
 class Exportar:
-    count = 0  # Contador compartido
+    def carpetas(self, count,nombre_archivo="",ruta=os.getcwd()):
 
-    def __init__(self, nombre_archivo="", ruta=os.getcwd()):
-        Exportar.count += 1
         if nombre_archivo == "":
-            self.nombre_archivo = f"entrada{Exportar.count}.txt"
+            self.nombre_archivo = f"entrada{count}.txt"
         else:
             self.nombre_archivo = nombre_archivo
-        self.ruta_carpeta = os.path.join(ruta, "../entrada_PED_2")#Ruta donde se encuentra la entrada de los txt
+        self.ruta_carpeta = os.path.join(ruta, "entrada_PED_2")#Ruta donde se encuentra la entrada de los txt
         self.ruta_actual = os.path.join(self.ruta_carpeta, self.nombre_archivo)
 
     #Verifica que el archiv este en la ruta_actual
@@ -79,17 +78,16 @@ class Exportar:
 # Clase para generar múltiples archivos de edificios
 class GeneratorArchivo:
     def __init__(self,cantidad):
-        self.count = 0  # Inicializar el contador de archivos
         self.cantidad = cantidad
     def initial(self, edificio_exportador):
         x = 0
         while x < self.cantidad:
-
+            edificio_exportador.carpetas(x)
             edificio_exportador.Read_and_Write()
             x += 1
 
 
 # Uso del GeneratorArchivo para generar 1000 archivo
 edificio_exportador = Exportar()
-generador = GeneratorArchivo(1000)
+generador = GeneratorArchivo(100)
 generador.initial(edificio_exportador)
